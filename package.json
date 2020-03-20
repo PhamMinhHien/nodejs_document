@@ -1,0 +1,29 @@
+{
+  "name": "nodejs_document",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhamMinhHien/NodeJS_document.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhamMinhHien/NodeJS_document/issues"
+  },
+  "homepage": "https://github.com/PhamMinhHien/NodeJS_document#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "async_hooks": "^1.0.0",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "inquirer": "^7.1.0",
+    "net": "^1.0.2",
+    "progress": "^2.0.3",
+    "util": "^0.12.2"
+  }
+}
