@@ -21,6 +21,7 @@
     "async_hooks": "^1.0.0",
     "axios": "^0.19.2",
     "express": "^4.17.1",
+    "fastify": "^2.13.0",
     "inquirer": "^7.1.0",
     "net": "^1.0.2",
     "progress": "^2.0.3",
