@@ -10,9 +10,11 @@
  */
 
 
-/* Chức năng : Làm việc với cơ chế ko đồng bộ .
+/*  Chức năng :
+        - Theo dõi ( track ) các resources - tài nguyên không đồng bộ 
 
-
+    Cơ chế : 
+        - 
 
 
 */
