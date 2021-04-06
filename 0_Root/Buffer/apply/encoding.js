@@ -1,11 +1,11 @@
 
-/* ================= Demo mã hóa + dịch ngược với type Buffer ================= */
+/* ================= Buffer ~ Mã hóa ( encode ) ký tự ================= */
 
-
+// Các type encode hỗ trợ 
 const type_encode = [
   "ascii", 
-  "utf8", // kiểu này mã hóa nhiều byte => nên nó dùng làm mặc dịnh 
-  "utf-8", 
+  "utf8", 
+  "utf-8", // default
   "utf16le", // chỉ encode với 2 hay 4 byte ( nên chỉ dùng ít cho mã hóa UTF_16 hay little_endian) - dạng của tín hiệu 16 bit linear PCM 
   "ucs2", 
   "ucs-2", 
@@ -20,8 +20,8 @@ let arr = []
 // Mã hóa 
 type_encode.map(item => { 
     arr.push({
-        type : item,
-        encode : Buffer.from(text, item) // Mã hóa chuỗi ra theo từng type 
+      type : item,
+      encode : Buffer.from(text, item) // Mã hóa chuỗi ra theo từng type 
     })
 })
 console.log(arr);
