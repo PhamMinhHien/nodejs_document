@@ -7,12 +7,13 @@ http.get('http://nodejs.org/dist/index.json', (res) => {
 
     let error;
     if (statusCode !== 200) {
-        error = new Error('Request Failed.\n' +
-            `Status Code: ${statusCode}`);
-    } else if (!/^application\/json/.test(contentType)) {
-        error = new Error('Invalid content-type.\n' +
-            `Expected application/json but received ${contentType}`);
+        error = new Error('Request Failed.\n' + `Status Code: ${statusCode}`);
+    } 
+    else if (!/^application\/json/.test(contentType)) {
+        error = new Error('Invalid content-type.\n' + `Expected application/json but received ${contentType}`);
     }
+
+
     if (error) {
         console.error(error.message);
         // Consume response data to free up memory
