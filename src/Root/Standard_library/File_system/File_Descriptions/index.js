@@ -16,5 +16,6 @@ fs.open('/open/some/file.txt', 'r', (err, fd) => {
 });
 
 /**
-    Hầu hết , các Operating System đều limit những con sô mở file trong mỗi lần mở . Nếu vượt qua số limit - sẽ dẫn đến việc bị rò rỉ bộ nhớ ( memory leak ) => application crash 
+    Hầu hết , các Operating System đều limit những con sô mở file trong mỗi lần mở . 
+    Nếu vượt qua số limit - sẽ dẫn đến việc bị rò rỉ bộ nhớ ( memory leak ) => application crash 
  */
